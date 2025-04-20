@@ -1,0 +1,42 @@
+.shape {
+  position: absolute;
+  opacity: 0.2;
+  filter: blur(60px);
+  animation: float 10s infinite ease-in-out alternate;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: #a29bfe;
+  border-radius: 50%;
+  top: 10%;
+  left: 15%;
+  z-index: -1;
+}
+
+.rectangle {
+  width: 400px;
+  height: 200px;
+  background-color: #74b9ff;
+  top: 60%;
+  left: 50%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 260px solid #55efc4;
+  top: 20%;
+  left: 70%;
+  z-index: -1;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(20px); }
+}

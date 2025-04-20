@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="background-styles.css" />
+</head>
+<body>
+  <main>
+    <header class="container">
+      <h1>สวัสดี: </h1>
+      <h1 id="username"></h1>
+    </header>
+    <form class="container" onsubmit="event.preventDefault()">
+      <div class="todo-input-container">
+        <h4>วันนี้อยากจะทำอะไรบ้าง</h4>
+        <input type="text" id="todo-input" 
+          placeholder="สิ่งที่อยากทำ"
+        />
+      </div>
+      <button type="button" id="add-todo-btn">อยากทำ!!</button>
+    </form>
+    <section class="container">
+      <div class="section-header">
+        <h3>รายการสิ่งที่อยากทำ</h3>
+        <p class="section-header-count">
+          <span id="todo-list-count">0</span>
+           รายการ
+        </p>
+      </div>
+      <ul id="todo-list">
+      </ul>
+    </section>
+  </main>
+  <div class="background">
+    <div class="shape circle"></div>
+    <div class="shape rectangle"></div>
+    <div class="shape triangle"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
